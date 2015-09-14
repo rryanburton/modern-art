@@ -1,58 +1,7 @@
 # Random Art
-
+Create art!
 ## Description
-
-Create art using Python's random module and math functions.
-
-## Tasks
-
-```markdown
-* [ ] Blank slate
-  * [ ] Create a GitHub repo called `modern-art`
-  * [ ] Put a `README.md` file in it
-  * [ ] Copy `requirements.txt`, `create_art.py`, and `random_art.py` into it frmo this repo
-  * [ ] Make sure your modern-art folder has its own virtual environment (`.envrc`), but **do not commit `.envrc` or `.direnv`**
-  * [ ] Install the requirements using `pip install -r requirements.txt`
-* [ ] Normal mode
-  * [ ] Test create_art.py and random_art.py, and examine random_art.py to determine how art is randomly being created
-  * [ ] Modify the create_expression function in random_art.py and come up with your own algorithm for generating random art
-  * [ ] Run create_art.py with your new function(s) and find some awesome artwork
-  * [ ] Commit at least one created artwork you particularly like, and include instructions in your `README.md` file for how to reproduce it
-* [ ] Hard Mode
-  * [ ] Implement an [abstract syntax tree][] or some other algorithm that requires modifying run_expression to work with
-```
-
-## Objectives
-
-### Learning Objectives
-
-After completing this assignment, you should understand:
-
-* Randomness
-* The Python `random` module
-* The sublime beauty of generated art
-
-### Performance Objectives
-
-After completing this assignment, you should be able to:
-
-* Generate images with Python
-* Use randomness to construct new functions
-
-## Details
-
-### Deliverables
-
-* A Git repo called random-art containing at least:
-  * `README.md` file explaining how to run your project
-  * a `requirements.txt` file
-  * a `random_art` module
-  * Your favorite piece of art you made, plus instructions
-    on how to replicate it.
-
-### Requirements  
-
-* No PEP8 or Pyflakes warnings or errors
+The sublime beauty of generated art
 
 ## Normal Mode
 
