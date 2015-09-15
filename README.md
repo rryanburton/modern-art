@@ -34,13 +34,19 @@ one of the harder parts of this exercise.
 
 This image was created with the following expression:
 
+
 expr1 = lambda x, y: sin(x) + cos(y) + sin(x) + cos(sin(tan(x)))
-  expr2 = lambda x, y: cos(tan(y))
-  expr3 = lambda x, y: sin(y) + cos(x) + sin(x) + cos(sin(tan(y)))
-  return random.choice([expr1, expr2, expr3])
+
+expr2 = lambda x, y: cos(tan(y))
+
+expr3 = lambda x, y: sin(y) + cos(x) + sin(x) + cos(sin(tan(y)))
+
+return random.choice([expr1, expr2, expr3])
 
   Seed: 4140325154512360605
+
   color-4140325154512360605-0.png:
+
     red: <function create_expression.<locals>.<lambda> at 0x1024d70d0>
     green: <function create_expression.<locals>.<lambda> at 0x1024d71e0>
     blue: <function create_expression.<locals>.<lambda> at 0x1024d7048>
