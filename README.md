@@ -28,34 +28,23 @@ and `run_expression` just runs it. Maybe it's an [abstract syntax tree][] and
 a string that you call `eval` on. You have to figure this part out, and it's
 one of the harder parts of this exercise.
 
-### What should my expression do?
 
-The concrete thing it has to do is take an `x` and `y` value and return a new
-value between -1.0 and 1.0. That doesn't tell you why or how, though.
 
-You should randomly construct an expression that uses `sin`, `cos`, and any
-other functions you want. `sin` and `cos` will definitely help you create
-patterns, but you should be creative. Look at other functions available to you
-and create your own functions for use.
-
-How you randomly construct the expression is up to you. `random.random()` and
-`random.choice()` are both obvious ways to construct it, but you should look
-at all the different functions for random distributions and consider them.
-
-![random1](random1.png)
+![random1](color-4140325154512360605-0.png)
 
 This image was created with the following expression:
 
-```py
-sin(pi * sin(pi * sin(pi * (sin(pi * sin(pi * sin(pi * sin(pi *
-    cos(pi * y))))) * cos(pi * sin(pi * cos(pi *
-    avg(sin(pi * y), (x * x)))))))))
-```
+expr1 = lambda x, y: sin(x) + cos(y) + sin(x) + cos(sin(tan(x)))
+  expr2 = lambda x, y: cos(tan(y))
+  expr3 = lambda x, y: sin(y) + cos(x) + sin(x) + cos(sin(tan(y)))
+  return random.choice([expr1, expr2, expr3])
 
-[abstract syntax tree]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
+  Seed: 4140325154512360605
+  color-4140325154512360605-0.png:
+    red: <function create_expression.<locals>.<lambda> at 0x1024d70d0>
+    green: <function create_expression.<locals>.<lambda> at 0x1024d71e0>
+    blue: <function create_expression.<locals>.<lambda> at 0x1024d7048>
 
-
-## Notes
 
 `create_art.py` takes several command-line parameters you may want to use.
 
@@ -68,11 +57,6 @@ default.
 * `--gray` or `--color` sets whether the image is in grayscale or color.
 Color is default.
 
-## Additional Resources
-
-* [Random Art](http://www.random-art.org/)
-* [The `random` module](https://docs.python.org/3.4/library/random.html)
-* [The `math` module](https://docs.python.org/3.4/library/math.html)
 
 ## Credit
 
