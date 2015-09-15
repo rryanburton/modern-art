@@ -1,9 +1,8 @@
 # Random Art
 Create art!
-## Description
+
 The sublime beauty of generated art
 
-## Normal Mode
 
 You are going to make random art, inspired by
 [random-art.org](http://www.random-art.org/). This project comes
@@ -18,16 +17,6 @@ with a file `create_art.py`. This file expects a module called
   created by `create_expression` and an `x` and `y` value. It runs the
   expression, passing the `x` and `y` values to it and returns a value
   between -1.0 and 1.0.
-
-### What's an expression?
-
-I'm super-glad you asked! It is a way for you to create a formula for your
-random art. You can define it however you like. Perhaps it's just a function
-and `run_expression` just runs it. Maybe it's an [abstract syntax tree][] and
-`run_expression` walks the tree and evaluates it. Maybe it's Python code in
-a string that you call `eval` on. You have to figure this part out, and it's
-one of the harder parts of this exercise.
-
 
 
 ![random1](color-4140325154512360605-0.png)
